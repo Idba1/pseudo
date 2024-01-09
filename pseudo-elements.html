@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pseudo-elements</title>
+    <style>
+        h5::after{
+            content: '.pdf';
+            color: cadetblue;
+            background-color: black;
+        }
+        h5::before{
+            content: 'start......';
+            color: crimson;
+            background-color: rgb(137, 177, 212);
+        }
+        p::first-letter{
+            font-size: 2em;
+        }
+
+        p::first-line{
+            background-color: chartreuse;
+        }
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h5>Natus velit laborum labore veritatis.</h5>
+    <h5>Ad ullam maxime unde quisquam.</h5>
+    <h5>Ipsum a sit odit eaque!</h5>
+    <h5>Ab culpa hic excepturi inventore.</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum accusantium provident ullam perspiciatis et explicabo officia illo! Quisquam, quos sint!</p>
+    <p>Quod sequi necessitatibus debitis provident odit exercitationem iure eveniet tenetur numquam cupiditate delectus excepturi corporis nisi minus officia, odio consequuntur!</p>
+    <p>Qui enim pariatur alias hic quisquam. Alias dolorem necessitatibus numquam magnam, quae eos, mollitia aspernatur, omnis deleniti eveniet sapiente quod.</p>
+    <p>Repudiandae necessitatibus ducimus ut animi at officia. Et tempora, autem minima, eos non dolores aperiam ipsum sint voluptatum cupiditate repudiandae?</p>
+    <p>Quaerat, sapiente. Est consequuntur nihil error doloremque tenetur porro temporibus ullam hic, debitis quidem quia repudiandae, amet vero aut! Possimus.</p>
 </body>
 </html>
